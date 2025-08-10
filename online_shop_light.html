@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Online Store - Clothes, Shoes & Books</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #ffffff;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+        margin: 0;
+    }
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+    .product {
+        background-color: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+        padding: 10px;
+    }
+    .product img {
+        max-width: 100%;
+        height: auto;
+    }
+    .product h3 {
+        margin: 10px 0 5px;
+    }
+    .product p {
+        margin: 5px 0;
+        color: #666;
+    }
+    .order-form {
+        background-color: #fff;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    input, textarea, select, button {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover {
+        background-color: #45a049;
+    }
+    footer {
+        background-color: #f1f1f1;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+    }
+    .payment img {
+        max-width: 200px;
+        margin: 10px;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Online Store</h1>
+        <p>Clothes | Shoes | Books</p>
+    </header>
+
+    <section class="products">
+        <div class="product">
+            <img src="804d040e-a615-43bc-8acf-50db7e8384f0.png" alt="Black Slippers">
+            <h3>Black Slippers</h3>
+            <p>Price: 15,000 MMK</p>
+        </div>
+        <div class="product">
+            <img src="92a0335e-b515-4067-b110-e94ffe727a62.png" alt="Beige Outfit">
+            <h3>Beige Outfit</h3>
+            <p>Price: 45,000 MMK</p>
+        </div>
+        <div class="product">
+            <img src="e6b9f25e-78ee-4d74-9a90-5738d4f33ef9.png" alt="White Outfit">
+            <h3>White Outfit</h3>
+            <p>Price: 45,000 MMK</p>
+        </div>
+        <div class="product">
+            <img src="f636ee7f-9bbf-4676-bc6c-5dbf392cd997.png" alt="Book - Reinvent Yourself">
+            <h3>Reinvent Yourself (Book)</h3>
+            <p>Price: 8,000 MMK</p>
+        </div>
+    </section>
+
+    <section class="order-form">
+        <h2>Order Form</h2>
+        <form action="mailto:youremail@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <label for="product">Select Product:</label>
+            <select id="product" name="product">
+                <option value="Black Slippers">Black Slippers</option>
+                <option value="Beige Outfit">Beige Outfit</option>
+                <option value="White Outfit">White Outfit</option>
+                <option value="Reinvent Yourself Book">Reinvent Yourself (Book)</option>
+            </select>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required></textarea>
+
+            <label for="payment">Payment Method:</label>
+            <select id="payment" name="payment">
+                <option value="KPay">KPay</option>
+                <option value="WavePay">WavePay</option>
+            </select>
+
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <section class="payment">
+        <h2>Payment QR Codes</h2>
+        <img src="409f629a-b0b9-4892-b1bd-6c20463209d8.png" alt="WavePay QR">
+        <img src="74df1c69-8679-4e7f-a67f-27a33677fdc1.png" alt="KPay QR">
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Online Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
